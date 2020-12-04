@@ -27,3 +27,5 @@ pip install PySide2 requests dbus-python
 Run `changewall.py`
 
 ## Screenshot
+
+![screenshot](https://raw.githubusercontent.com/cuteasci/changewall/master/screenshots/screenshot.png)
