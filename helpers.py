@@ -8,7 +8,7 @@ from typing import List, Dict, Any, Tuple
 
 from PySide2.QtGui import QImageReader
 
-from config import APP_DIR, JSON_FILE, THUMBS_DIR
+from config import APP_DIR, JSON_FILE
 from logger import logger
 
 

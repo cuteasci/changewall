@@ -235,13 +235,13 @@ class Changewall(QDialog):
                 logger.debug(f"{short_path(THUMBS_DIR)} is empty. Downloading new thumbnails")
                 self.progressbar.show()
                 self.download_thumbs()
-        elif not JSON_FILE.exists():
+            else:
+                logger.debug('Filling stacked widget')
+                self.sw.fill()
+                self.change_info()
+        else:
             logger.debug(f"{short_path(JSON_FILE)} doesn't exist. Updating")
             self.update_()
-        else:
-            logger.debug('Filling stacked widget')
-            self.sw.fill()
-            self.change_info()
 
     def resize_move(self) -> None:
         """ Resize and move window using parameters from settings """
